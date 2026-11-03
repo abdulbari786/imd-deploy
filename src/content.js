@@ -6,28 +6,37 @@ import logo from './assets/logo.jpg'; import poster from './assets/poster.jpg'
 import schoolAssembly from './assets/school-assembly.jpeg'; import schoolStudents from './assets/school-students.jpeg'
 import projectsOverview from './assets/projects-overview.jpeg'; import founderFeature from './assets/founder-feature.png'
 import wayToJannah from './assets/way-to-jannah.png'; import medical from './assets/medical.png'
+import wayToJannahPeople from './assets/way-to-jannah-people.jpeg'
 import homeGirls from './assets/home-girls.jpg'
+import homeForGirls from './assets/home-for-girls.jpeg'; import homeForGirlsGroup from './assets/home-for-girls-group.jpeg'
+import heroGirlsIndependence from './assets/hero-girls-independence.jpeg'
+import heroGirlsIftar from './assets/hero-girls-iftar.jpeg'
+import foodEssentialsMeal from './assets/food-essentials-meal.jpeg'; import foodEssentialsCelebration from './assets/food-essentials-celebration.jpeg'
+import schoolEvent from './assets/school-event.jpeg'; import schoolClassroomA from './assets/school-classroom-a.jpeg'; import schoolClassroomB from './assets/school-classroom-b.jpeg'
+import achievementAward from './assets/achievement-award.jpeg'; import achievementOpening from './assets/achievement-opening.jpeg'
+import achievementBook from './assets/achievement-book.jpeg'; import achievementKarate from './assets/achievement-karate.jpeg'
+import instagramLogo from './assets/instagram-logo.png'; import facebookLogo from './assets/facebook-logo-transparent.png'
 import dAmp from './assets/d_amp.jpg'; import dStar from './assets/d_star.jpg'; import dChild from './assets/d_child.jpg'
 import dTg from './assets/d_tgscpcr.jpg'; import dN1 from './assets/d_nhrc1.jpg'; import dN2 from './assets/d_nhrc2.jpg'
 import qrWa from './assets/qr_whatsapp.svg'; import qrIg from './assets/qr_instagram.svg'
-export const IMG={school,schoolAssembly,schoolStudents,women,top30,girls,homeGirls,founder,founderFeature,karate,karate2,projectsOverview,press1,press2,trophy1,plaque,logo,poster,qrWa,qrIg,wayToJannah,medical}
+export const IMG={school,schoolAssembly,schoolStudents,women,top30,girls,homeGirls,founder,founderFeature,karate,karate2,projectsOverview,press1,press2,trophy1,plaque,logo,poster,qrWa,qrIg,wayToJannah,medical,instagramLogo,facebookLogo}
 export const TRUST={name:'Imdad-ul-Fuqaraa Trust',phone:'+91 74160 02818',tel:'+917416002818',wa:'917416002818',email:'imdadulfuqaraatrust@gmail.com',ceo:'ceo@imdadulfuqaraatrust.com',
  address:'10-94, Bismillah Colony, Shaheen Nagar, Balapur, Jalpally Municipality, Hyderabad, Telangana – 500005',ig:'https://www.instagram.com/imdadulfuqaraatrust/',fb:'https://www.facebook.com/azzu.parvez',reviews:'https://www.google.com/maps/place/IMDAD-UL+FUQARAA+TRUST/@17.3008941,78.4825258,17z/data=!4m8!3m7!1s0x3bcba39bdb77e4a9:0x73a2c024a36934b6!8m2!3d17.300889!4d78.4851007!9m1!1b1!16s%2Fg%2F11qbkwv23q?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D',reg:'Regd. No. 48 | IV | 2021'}
 export const waLink=(text='')=>{const url=new URL('https://api.whatsapp.com/send');url.searchParams.set('phone',TRUST.wa.replace(/\D/g,''));if(text)url.searchParams.set('text',text);return url.href}
 export const BANK=[['Account name','IMDAD-UL-FUQARAA TRUST'],['Account number','50200059196653'],['Account type','Current Account'],['IFSC code','HDFC0001629'],['Branch','Shaikpet'],['Bank','HDFC Bank']]
 export const STATS=[{n:335,s:'',l:'students at IFT Mission High School'},{n:70,s:'+',l:'children receiving learning support'},{n:400,s:'+',l:'students supported through TOSS till date'},{n:500,s:'+',l:'meals on the final Taraweeh night'}]
 export const CAUSES=[
- {t:'A home for girls',need:'Girls who have lost parents need safety and someone who cares.',do:'A safe home with medical care, modern education, Deeni tarbiyat, nutritious meals and a caring community.',img:homeGirls,fit:'contain'},
- {t:'Food and essentials',need:'Families on daily wages often go without.',do:'Ration kits, Ramadan meals, clean water and winter blankets.',slides:[{type:'video',src:'/food-essentials.mp4',alt:'Food and essentials distribution'},{type:'video',src:'/food-essentials-2.mp4',alt:'IFT food relief and essential supplies'}]},
+ {t:'A home for girls',need:'Girls who have lost parents need safety and someone who cares.',do:'A safe home with medical care, modern education, Deeni tarbiyat, nutritious meals and a caring community.',img:homeForGirls,fit:'cover'},
+ {t:'Food and essentials',need:'Families on daily wages often go without.',do:'Ration kits, Ramadan meals, clean water and winter blankets.',slides:[{type:'video',src:'/food-and-essentials-new.mp4',alt:'IFT food and essentials distribution',muted:false,soundToggle:true},{type:'image',src:foodEssentialsMeal,alt:'Students sharing a meal at IFT Mission High School'},{type:'image',src:foodEssentialsCelebration,alt:'IFT students and girls sharing a festive meal'},{type:'video',src:'/food-essentials-2.mp4',alt:'IFT food relief and essential supplies',muted:false,soundToggle:true}]},
  {t:'IFT Mission High School',need:'Every child deserves a safe, supportive place to learn.',do:'School education for 335 students, alongside free learning support and TOSS guidance for Aalim and Hafiz learners and students returning after dropping out.',img:school},
  {t:'Women\u2019s skills',need:'Widows and single mothers need an income of their own.',do:'Tailoring and vocational training with completion certificates.',img:women},
  {t:'Community healthcare',need:'Medical care is out of reach for many families.',do:'Free health camps and medicine distribution.',slides:[{type:'video',src:'/health-camp.mp4',alt:'IFT community health camp'},{type:'image',src:medical,alt:'Volunteers distributing medicine at the IFT health camp'}]}]
 export const PROJECTS=[
- {t:'Project WAY TO JANNAH',label:'New flagship project',s:'Our permanent mega campus in Balapur Jalpally. Land acquired and registered, with site preparation and borewell infrastructure underway. Planned to serve 100+ orphan girls and 1,000+ students.',img:girls,fit:'contain',featured:true},
+ {t:'Project WAY TO JANNAH',label:'New flagship project',s:'Our permanent mega campus in Balapur Jalpally. Land acquired and registered, with site preparation and borewell infrastructure underway. Planned to serve 100+ orphan girls and 1,000+ students.',img:wayToJannahPeople,featured:true},
  {t:'IFT Mission High School',s:'School education and a supportive learning environment for 335 students.',img:school},
- {t:'IFT Home for Girls',s:'A safe home with medical care, modern education, Deeni tarbiyat, meals and residential care for girls who need it.',img:homeGirls,fit:'contain'},
+ {t:'IFT Home for Girls',s:'A safe home with medical care, modern education, Deeni tarbiyat, meals and residential care for girls who need it.',img:homeForGirlsGroup,fit:'contain'},
  {t:'Women Skills Hub',s:'Tailoring and vocational training to help women build independent livelihoods.',img:women},
- {t:'Food, relief and healthcare',s:'Ration support, Ramadan meals, health camps and essentials for families.',img:plaque},
+ {t:'Food, relief and healthcare',s:'Ration support, Ramadan meals, health camps and essentials for families.',img:foodEssentialsCelebration},
  {t:'Student sports and achievement',s:'Karate training, competitions and opportunities for students to excel.',img:karate}]
 export const TIMELINE=[['2019','Community service begins through a WhatsApp group.'],['2021','Registered trust. Residential care begins in a small rented home.'],['2024','IFT Mission High School opens.'],['2025–26','Training, sports awards and recognition.'],['Next','Project WAY TO JANNAH: permanent campus.']]
 export const PRESS=[{img:press1,t:'Kalam Nigha, 10 Feb 2025',s:'16 students received karate certificates, belts and awards.'},{img:press2,t:'ABN Andhra Jyothy, 9 Feb 2025',s:'Third state inter-school karate championship. Students honoured.'}]
@@ -36,9 +45,22 @@ export const GOV=[{img:dTg,t:'Pledge Against Child Marriage',s:'Appreciation fro
 export const NGO=[{img:founderFeature,t:'Top 30 Visionary Women 2026',s:'Femhonour Magazine feature on founder Azmath Unnisa, 5 June 2026.',tag:'Recognition'},{img:dAmp,t:'Changemaker of the Year 2025',s:'Association of Muslim Professionals, National Awards for Social Excellence.',tag:'Award'},
  {img:dStar,t:'Commitment to Inclusivity',s:'IFT Mission High School nominated, STTAR Global Education Conference, Sept 2025.',tag:'Nomination'},{img:dChild,t:'Child Protection Laws in India',s:'Nyayashodh course, May 2025. Completed by the founder.',tag:'Course completed'}]
 export const WAY_TO_JANNAH_MEDIA=[{type:'video',src:'/way-to-jannah.mp4',alt:'Project Way to Jannah campus update'},{type:'video',src:'/way-to-jannah2.mp4',alt:'Project Way to Jannah progress video'}]
+export const HERO_GIRLS_MEDIA=[
+ {src:homeForGirls,alt:'Girls of IFT Home for Girls together',label:'IFT Home for Girls'},
+ {src:homeForGirlsGroup,alt:'Girls of IFT Home for Girls at a group gathering',label:'A safe place to grow'},
+ {src:heroGirlsIftar,alt:'Girls sharing an iftar meal at IFT Home for Girls',label:'Sharing and growing together'}]
+export const SCHOOL_MEDIA=[
+ {type:'image',src:schoolEvent,alt:'IFT Mission High School students on a school outing'},
+ {type:'image',src:schoolClassroomA,alt:'Students learning together in an IFT Mission High School classroom'},
+ {type:'image',src:schoolClassroomB,alt:'A classroom lesson at IFT Mission High School'}]
+export const ACHIEVEMENT_MEDIA=[
+ {type:'image',src:achievementKarate,alt:'IFT Home for Girls students with karate trophies and certificates'},
+ {type:'image',src:achievementAward,alt:'IFT founder receiving a community recognition award'},
+ {type:'image',src:achievementOpening,alt:'Community leaders inaugurating an IFT initiative'},
+ {type:'image',src:achievementBook,alt:'IFT founder at a book presentation and learning event'}]
 export const REVIEWS=[
  {name:'Mohammad Vaseem sultana',time:'2 months ago',detail:'Google review',text:'Alhamdulillah I will give 5 ⭐ to this orphanage it is wonderful experience I spend time with girls when I went on that day there was 39 girls alhamdulillah management is giving their best for this girls the girls getting morden education and islamic education almost 25 girls are going school and few are writing toss 10th exams 1 in inter and 1in degree the orphanage is well maintained and very professional hats to chairperson Azmath Unnisa Madam she is very kind and the small girls are to good they haveing some groups name the A group girls are to funny my takeaway token is to visit again 😃'},
  {name:'sana shagufi',time:'7 months ago',detail:'Local Guide · 14 reviews · 3 photos',text:'This place is a very peaceful and calm place. I dont think we are helping them in any way, in fact it is the kids, the serene environment there is helping us. This place teaches life, gratitude and being compassionate.\n\nThe founder, the staff, the members of the place and the lovely kids.. they are all so welcoming and makes feel like a home, away from home.\n\nMay Allah give barakah and jazeerah to all the people of the foundation and May Allah make good naseeb of all the girls of the foundation as well as the whole world.'},
  {name:'Majidqureshi Majidqureshi',time:'7 months ago',detail:'Google review',text:'Doing great work and helping needy children and orphans. Performing many multipurpose activities to help the needy. They are trustworthy.'},
  {name:'Ameena Begum',time:'7 months ago',detail:'Google review',text:"Alhamdulillah it's is helpfull place for needy person ,an orphan person an education is superb the saff of this place is very kind of"}]
-export const GALLERY=[[karate,'Karate awards, Feb 2025'],[girls,'Girls of the trust'],[trophy1,'School trophies and awards'],[projectsOverview,'IFT projects and community programs'],[founderFeature,'Femhonour feature on the trust founder'],[plaque,'Token of Thanks from Terminate Hunger'],[karate2,'State inter-school karate championship']]
+export const GALLERY=[[karate,'Karate awards, Feb 2025'],[heroGirlsIftar,'Girls sharing iftar at IFT Home for Girls'],[trophy1,'School trophies and awards'],[projectsOverview,'IFT projects and community programs'],[founderFeature,'Femhonour feature on the trust founder'],[plaque,'Token of Thanks from Terminate Hunger'],[karate2,'State inter-school karate championship'],[achievementKarate,'IFT girls celebrating karate achievements'],[achievementAward,'Recognition for IFT founder and community service'],[achievementOpening,'Community initiative inauguration'],[achievementBook,'Founder at a book presentation'],[homeForGirls,'IFT Home for Girls'],[foodEssentialsCelebration,'Students sharing a festive meal']]
