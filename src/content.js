@@ -7,6 +7,8 @@ import schoolAssembly from './assets/school-assembly.jpeg'; import schoolStudent
 import projectsOverview from './assets/projects-overview.jpeg'; import founderFeature from './assets/founder-feature.png'
 import wayToJannah from './assets/way-to-jannah.png'; import medical from './assets/medical.png'
 import wayToJannahPeople from './assets/way-to-jannah-people.jpeg'
+import wayToJannahLand1 from './assets/way-to-jannah-land-1.jpeg'
+import wayToJannahLand2 from './assets/way-to-jannah-land-2.jpeg'
 import homeGirls from './assets/home-girls.jpg'
 import homeForGirls from './assets/home-for-girls.jpeg'; import homeForGirlsGroup from './assets/home-for-girls-group.jpeg'
 import heroGirlsIndependence from './assets/hero-girls-independence.jpeg'
@@ -32,19 +34,23 @@ export const CAUSES=[
  {t:'Women\u2019s skills',need:'Widows and single mothers need an income of their own.',do:'Tailoring and vocational training with completion certificates.',img:women},
  {t:'Community healthcare',need:'Medical care is out of reach for many families.',do:'Free health camps and medicine distribution.',slides:[{type:'video',src:'/health-camp.mp4',alt:'IFT community health camp'},{type:'image',src:medical,alt:'Volunteers distributing medicine at the IFT health camp'}]}]
 export const PROJECTS=[
- {t:'Project WAY TO JANNAH',label:'New flagship project',s:'Our permanent mega campus in Balapur Jalpally. Land acquired and registered, with site preparation and borewell infrastructure underway. Planned to serve 100+ orphan girls and 1,000+ students.',img:wayToJannahPeople,featured:true},
+ {t:'Project WAY TO JANNAH',label:'New flagship project',s:'A planned permanent community development campus in Balapur Jalpally, bringing residential care, education, women’s skills training and community services together.',img:wayToJannahLand2,featured:true},
  {t:'IFT Mission High School',s:'School education and a supportive learning environment for 335 students.',img:school},
  {t:'IFT Home for Girls',s:'A safe home with medical care, modern education, Deeni tarbiyat, meals and residential care for girls who need it.',img:homeForGirlsGroup,fit:'contain'},
  {t:'Women Skills Hub',s:'Tailoring and vocational training to help women build independent livelihoods.',img:women},
  {t:'Food, relief and healthcare',s:'Ration support, Ramadan meals, health camps and essentials for families.',img:foodEssentialsCelebration},
  {t:'Student sports and achievement',s:'Karate training, competitions and opportunities for students to excel.',img:karate}]
-export const TIMELINE=[['2019','Community service begins through a WhatsApp group.'],['2021','Registered trust. Residential care begins in a small rented home.'],['2024','IFT Mission High School opens.'],['2025–26','Training, sports awards and recognition.'],['Next','Project WAY TO JANNAH: permanent campus.']]
+export const TIMELINE=[['2019','Community service begins through a WhatsApp group.'],['2021','Registered trust. Residential care begins in a small rented home.'],['2024','IFT Mission High School opens.'],['2025–26','School growth, new milestones and progress toward a permanent campus.'],['Next','Project WAY TO JANNAH: permanent campus.']]
 export const PRESS=[{img:press1,t:'Kalam Nigha, 10 Feb 2025',s:'16 students received karate certificates, belts and awards.'},{img:press2,t:'ABN Andhra Jyothy, 9 Feb 2025',s:'Third state inter-school karate championship. Students honoured.'}]
 export const GOV=[{img:dTg,t:'Pledge Against Child Marriage',s:'Appreciation from the Telangana State Commission for Protection of Child Rights, Nov 2025.',tag:'Appreciation'},
  {img:dN2,t:'Human Rights Pledge (Trust)',s:'National Human Rights Commission pledge portal, Dec 2024.',tag:'Pledge'},{img:dN1,t:'Human Rights Pledge (Founder)',s:'National Human Rights Commission pledge portal, Dec 2024.',tag:'Pledge'}]
 export const NGO=[{img:founderFeature,t:'Top 30 Visionary Women 2026',s:'Femhonour Magazine feature on founder Azmath Unnisa, 5 June 2026.',tag:'Recognition'},{img:dAmp,t:'Changemaker of the Year 2025',s:'Association of Muslim Professionals, National Awards for Social Excellence.',tag:'Award'},
  {img:dStar,t:'Commitment to Inclusivity',s:'IFT Mission High School nominated, STTAR Global Education Conference, Sept 2025.',tag:'Nomination'},{img:dChild,t:'Child Protection Laws in India',s:'Nyayashodh course, May 2025. Completed by the founder.',tag:'Course completed'}]
-export const WAY_TO_JANNAH_MEDIA=[{type:'video',src:'/way-to-jannah.mp4',alt:'Project Way to Jannah campus update'},{type:'video',src:'/way-to-jannah2.mp4',alt:'Project Way to Jannah progress video'}]
+export const WAY_TO_JANNAH_MEDIA=[
+ {type:'image',src:wayToJannahLand1,alt:'Proposed Way to Jannah campus site in Balapur Jalpally, with trust project sign'},
+ {type:'image',src:wayToJannahLand2,alt:'IFT land site and sign for the planned community campus'},
+ {type:'video',src:'/way-to-jannah.mp4',alt:'Project Way to Jannah campus update'},
+ {type:'video',src:'/way-to-jannah2.mp4',alt:'Project Way to Jannah progress video'}]
 export const HERO_GIRLS_MEDIA=[
  {src:homeForGirls,alt:'Girls of IFT Home for Girls together',label:'IFT Home for Girls'},
  {src:homeForGirlsGroup,alt:'Girls of IFT Home for Girls at a group gathering',label:'A safe place to grow'},
