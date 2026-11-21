@@ -38,7 +38,7 @@ export const PROJECTS=[
  {t:'IFT Mission High School',s:'Modern schooling, Islamic education and moral instruction for 335 boys and girls in separate academic sections.',img:schoolProject},
  {t:'IFT Home for Girls',s:'A safe home with medical care, modern education, Deeni tarbiyat, meals and residential care for girls who need it.',img:homeForGirlsGroup,fit:'contain'},
  {t:'Women Skills Hub',s:'Tailoring and vocational training to help women build independent livelihoods.',img:women},
- {t:'Food, relief and healthcare',s:'Ration support, Ramadan meals, health camps and essentials for families.',img:foodEssentialsCelebration},
+ {t:'Food, relief and healthcare',s:'Ration support, Ramadan meals, health camps and essentials for families.',img:foodEssentialsCelebration,fit:'cover'},
  {t:'Student sports and achievement',s:'Karate training, competitions and opportunities for students to excel.',img:karate}]
 export const TIMELINE=[['2019','Community service begins through a WhatsApp group.'],['2021','Registered trust. Residential care begins in a small rented home.'],['2024','IFT Mission High School opens.'],['2025–26','School growth, new milestones and progress toward a permanent campus.'],['Next','Project WAY TO JANNAH: permanent campus.']]
 export const PRESS=[

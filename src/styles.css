@@ -217,6 +217,7 @@ html[data-theme="dark"] .review-caption{color:#d7e2f0}
 
 .projects{align-items:start}
 .project-card>img,.project-card.featured>img{display:block;width:100%;height:auto;min-height:0;max-height:none;object-fit:contain;background:transparent}
+.project-card>img.cover{height:190px;object-fit:cover}
 .project-card.featured{grid-column:auto;display:flex;flex-direction:column}
 .project-card.featured h3{font-size:1.15rem}
 
